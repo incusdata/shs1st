@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+   width="800" height="90">
+   <rect x="0" y="0" width="100%" height="80" fill="#5577EE" />
+   <rect x="0" y="80" width="100%" height="7.5" fill="#EE2255" />
+   <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+      font-size="300%" font-weight="900" letter-spacing="2.5"
+      font-family="Avinir Black,Roboto Black,Segoe UI Black,Arial Black,sans-serif"
+      dy="-.0em" fill="#EEDD00" stroke="black" stroke-width="1.25"
+      filter="url(#shadow)">&#160;SHELL SCRIPT FIRST&#160;</text>
+   <defs>
+      <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+         <feGaussianBlur stdDeviation="3" result="blur" />
+         <feOffset dx="2" dy="2" in="blur" result="offsetBlur" />
+         <feFlood flood-color="black"
+            flood-opacity="0.5" result="offsetColor" />
+         <feComposite in="offsetColor"
+            in2="offsetBlur" operator="in" result="offsetBlurColor"/>
+         <feMerge>
+            <feMergeNode in="offsetBlurColor"/>
+            <feMergeNode in="SourceGraphic"/>
+         </feMerge>
+      </filter>
+   </defs>
+</svg>

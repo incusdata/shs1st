@@ -1,0 +1,4 @@
+# .gitignore — Very basic; Custom for this repository. Syntax reference
+# at: `https://git-scm.com/docs/gitignore`.
+#
+Session.vim
