@@ -16,6 +16,17 @@ Simple script to count only the even numbers in a list of integers. The main poi
    https://github.com/incusdata/shs1st/wiki/06-Shell-Scripts#continue-command
    "GitHub — Incus Data / Shell Scripting First / Wiki / Execution Transfer / continue Command"
 
+## [`indented_heredoc.sh`][shs1st-snip-indented_heredoc_sh] — Indented Here Documents
+
+In scripts, [here documents][w-heredoc] (heredocs) can be indented if they start with `<<-`. However, the indentation must be performed with hard ‹TAB› characters (not spaces). This snippet in this script shows various hard ‹TAB› indented heredocs. The output will show that the shell removes all hard ‹TAB› indentation.
+
+[shs1st-snip-indented_heredoc_sh]:
+   https://github.com/incusdata/shs1st/blob/main/snip/indented_heredoc.sh
+   "GitHub — Incus Data / Shell Scripting First / Snippets / indented_heredoc.sh"
+[w-heredoc]:
+   https://en.wikipedia.org/wiki/Here_document
+   "Wikipedia — Here Documents"
+
 ## [`linux_console.sh`][shs1st-snip-linux_console_sh] — Linux Console Palette
 
 This file contains [escape sequences][man7-console_codes4] to set the palette of 16 colours that a Linux [console][w-linux-cons] supports. These sequences are unique to the Linux console, which otherwise emulates a [VT-102][w-vt100] terminal.
