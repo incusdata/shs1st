@@ -4,7 +4,7 @@
 # when the script exits, or the user pressed ‹Ctrl+C›. Uses
 # a function as a `trap` ‹command›.
 #
-tmpfile="$(mktemp)"               #← create temporary file.
+tmpfile="$(mktemp -t tmp.XXXXXX)" #← create temporary file.
 trap cleanup EXIT INT             #← trap EXIT (0) and INT.
 
 cleanup () {                      #← cleanup function.

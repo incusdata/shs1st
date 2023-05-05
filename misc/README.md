@@ -24,7 +24,7 @@ For cases `1` and `2` the `Process` is a one level deep ‹*command*›. For cas
 
 [shs1st-misc-envdemo_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/envdemo.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / envdemo.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / envdemo.sh"
 [man7-env1]:
    https://man7.org/linux/man-pages/man1/env.1.html
    "man7/env(1) — Run a program in a modified environment" 
@@ -55,10 +55,10 @@ This will output `123`, `123`, `123`, and finally: `0`.
 
 [idgh-wiki-concepts-cli-arg]:
    https://github.com/incusdata/shs1st/wiki/01-Basic-Concepts#command-line-arguments
-   "GitHub — Incus Data / Shell Scripting First / Wiki / Basic Concepts / Command-Line Arguments"
+   "GitHub — Incus Data / Shell Script First / Wiki / Basic Concepts / Command-Line Arguments"
 [shs1st-misc-exitcode_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/exitcode.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / exitcode.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / exitcode.sh"
 [w-exitcode]:
    https://en.wikipedia.org/wiki/Exit_status
    "Wikipedia — Exit Status"
@@ -81,7 +81,7 @@ Arguments, short options, and long options, can appear in any order.
 
 [shs1st-misc-getopt_demo_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/getopt_demo.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / getopt_demo.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / getopt_demo.sh"
 [man7-getopt1]:
   https://www.man7.org/linux/man-pages/man1/getopt.1.html 
   "man7/getopt(1) — Parse command-line options (enhanced)"
@@ -104,7 +104,7 @@ Arguments not associated with options, may follow the options, as long as the sc
 
 [shs1st-misc-getopts_demo_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/getopts_demo.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / getopts_demo.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / getopts_demo.sh"
 [man7-getopts1p]:
   https://www.man7.org/linux/man-pages/man1/getopts.1p.html 
   "man7/getopts(1p) — Parse short command-line options"
@@ -139,13 +139,13 @@ done < "${src:-/dev/stdin}"
 
 [shs1st-misc-line_by_line_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/line_by_line.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / line_by_line.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / line_by_line.sh"
 [shs1st-snip-process_lines]:
    https://github.com/incusdata/shs1st/tree/main/snip#process_linessh--line-wise-processing
-   "GitHub — Incus Data / Shell Scripting First / Snippets / Line-Wise Processing"
+   "GitHub — Incus Data / Shell Script First / Snippets / Line-Wise Processing"
 [shs1st-snip-stdin_or_file]:
    https://github.com/incusdata/shs1st/tree/main/snip#stdin_or_filesh--read-standard-input-or-file 
-   "GitHub — Incus Data / Shell Scripting First / Snippets / Line-Wise Processing"
+   "GitHub — Incus Data / Shell Script First / Snippets / Line-Wise Processing"
 [man7-cat1p]:
    https://man7.org/linux/man-pages/man1/cat.1p.html
    "man7/cat(1p) — Concatenate and print files"
@@ -170,7 +170,7 @@ This script demonstrates several ways to process its command-line arguments.
 
 [shs1st-misc-showargs_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/showargs.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / showargs.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / showargs.sh"
 [og-misc-shcmd-parms]:
    https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_05_02
    "POSIX — Utilities / Shell Command Language # 2.5.2 Special Parameters"
@@ -191,7 +191,7 @@ characters. These sequences facilitate controlling the terminal using
 
 [shs1st-misc-special_chars_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/special_chars.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / special_chars.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / special_chars.sh"
 [bash-syn-escape]:
    https://www.gnu.org/software/bash/manual/bash.html#Escape-Character
    "Bash Manual — Escape Character"
@@ -211,6 +211,27 @@ characters. These sequences facilitate controlling the terminal using
    https://en.wikipedia.org/wiki/POSIX
    "Wikipedia — POSIX"
 
+## [`trap_cleanup.sh`][shs1st-misc-trap_cleanup_sh] — Cleanup with trap
+
+An example script demonstrating cleaning up a temporary file created with [**mktemp**][man7-mktemp], using a [**trap(1p)**][man7-trap1p] command. The [**mktemp**][man7-mktemp] command is not strictly POSIX-compliant, but is available on most modern Unix-like systems, including Linux and BSD variants.
+
+The ‹*command*› that [**trap**][man7-trap1p] must execute, is a `cleanup` function. Since the same function must handle both ‹Ctrl+C› (signal **INT**), and the pseudo-signal **EXIT**, it resets both signals when run.
+
+Also see the [Signals & Traps][idgh-shs1st-wiki-extra-signals] topic on the wiki.
+
+[shs1st-misc-trap_cleanup_sh]:
+   https://github.com/incusdata/shs1st/blob/main/misc/trap_cleanup.sh
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / trap_cleanup.sh"
+[man7-trap1p]:
+   https://www.man7.org/linux/man-pages/man1/trap.1p.html
+   "trap(1p) — Trap/Handle signals"
+[man7-mktemp]:
+   https://man7.org/linux/man-pages/man1/mktemp.1.html
+   "mktemp(1) — Create a temporary file or directory"
+[idgh-shs1st-wiki-extra-signals]:
+   https://github.com/incusdata/shs1st/wiki/Z-Extra-Topics#signals--traps
+   "GitHub — Incus Data / Shell Script First / Wiki / Extra Topics # Signals & Traps"
+
 ## [`whichshell.sh`][shs1st-misc-whichshell_sh] — Show System, Login & Script Shells
 
 This script prints out paths to to the *system shell*; the user's *login shell*, and the shell which is interpreting the script. The system shell is represented by **`sh`**, which is a symbolic link to the *real* system shell. The user's login shell is in the `SHELL` environment variable. An *interactive* shell's name will be in **`$0`**.
@@ -221,7 +242,7 @@ The script makes use of [**`readlink(1)`**][man7-readlink1], [**`which`**][ss64-
 
 [shs1st-misc-whichshell_sh]:
    https://github.com/incusdata/shs1st/blob/main/misc/whichshell.sh
-   "GitHub — Incus Data / Shell Scripting First / Miscellaneous / whichshell.sh"
+   "GitHub — Incus Data / Shell Script First / Miscellaneous / whichshell.sh"
 [lkd-procfs-pid]:
    https://www.kernel.org/doc/html/latest/filesystems/proc.html#process-specific-subdirectories
    "Linux Kernel Docs — The /proc Filesystem"
