@@ -108,6 +108,12 @@ online resources.
 
  * [Online Help Resources][idgh-shs1st-wiki-home-online-res] — Online **man** pages and documentation resources list on this repository's wiki.
 
+ * [Unix Shell Genealogy][egop-sh-anc] — The ancestry of Unix-like shells stretches as far back as 1971. Many features available today, were available to users in the 1980's.
+
+[egop-sh-anc]:
+   https://egopontem.com/blog/shell-ancestry
+   "Ego Pontem — Shell Ancestry"
+
 | &#x002A;&#xFE0F;&#x20E3; **DISCLAIMER** |
 | :-------------------------------------- |
 | We do not claim suitability of these resources for your requirements. No affiliation with associated individuals, groups, companies, or ideologies, exists. We do not necessarily endorse, nor are we endorsed by, any of the aforementioned. ([WANL](## "We Are Not Lawyers")) |
