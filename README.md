@@ -73,10 +73,10 @@ Writing POSIX-compliant scripts increases their portability across Linux distrib
 
 | feature                                | description                    |
 |:---------------------------------------|:-------------------------------|
-| **`<(‹command›))`**                    | Process substitution. |
+| **`<(‹command›)`**                     | Process substitution. |
 | **`((‹expr›))`**                       | Arithmetic evaluation. |
 | **`[[‹expr›]]`**                       | Extended `test` command. |
-| **`${‹var›/‹patt›/‹replace›}`**        | Subtitution. |
+| **`${‹var›/‹patt›/‹replace›}`**        | Substitution. |
 | **`for((‹init›;‹cond›;‹augm›))`**      | C-style for loop. |
 | **`local`**                            | Local variables in functions. |
 | **`readonly`**                         | Create constants. |
