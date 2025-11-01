@@ -44,8 +44,8 @@ Writing POSIX-compliant scripts increases their portability across Linux distrib
 | **`$(‹command›)`**                     | Command substitution (alternative: **`` `‹command›` ``**). |
 | **`(‹command›)`**                      | Run command(s) in subshell. |
 | **`$((‹expr›))`**                      | Arithmetic expansion. |
-| **`${‹var›#‹pattern›}`**               | Prefix removal. Also `##` (for longest). |
-| **`${‹var›%‹pattern›}`**               | Postfix removal. Also `%%` (for longest). |
+| **`${‹var›#‹pattern›}`**               | Shortest prefix removal. `##` for longest. |
+| **`${‹var›%‹pattern›}`**               | Shorttest postfix removal. `%%` for longest. |
 | **`[‹args›]`**                         | Tests. Alias for `test`. |
 | **`set -e`**                           | Error handling. |
 | **`trap`**                             | Signal handling. |
